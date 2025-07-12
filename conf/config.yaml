@@ -1,0 +1,28 @@
+#通用设置-----------------------
+ip: 120.26.208.110 #公网ip
+port: 8081
+threadnum: #线程池线程数
+  iothread: 2
+  workthread: 2
+timeout: 30000  #默认超时时间(ms)
+
+#设置日志等级---------------------
+
+#    trace = 0,
+#    debug = 1,
+#    info = 2,
+#    warn = 3,
+#    err = 4,
+#    critical = 5,
+#    off = 6
+logging:
+  level: debug #日志等级
+  log_out_console: true #是否输出到控制台
+  log_out_dir: ../log #日志文件输出路径
+  logger_name_prefix: server #日志文件前缀
+
+#etcd配置-------------------------
+etcd:
+  url: http://127.0.0.1:2379
+  base_dir: /server
+  leaseKeepTime: 3 #rpc_client端为-1
