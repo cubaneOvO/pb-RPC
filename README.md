@@ -2,6 +2,7 @@
 This is an RPC framework implemented in C++, using Protobuf for serialization and Etcd as the registration center.
 
 Install required packages:
+  apt install etcd （As for Ubuntu 24.04 install the package with following name: apt install etcd-server）
   cd scripts/
   ./etcd-cpp-api_install.sh
   
